@@ -12,9 +12,11 @@
 		55B9EA051F70D99100160E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B9EA031F70D99100160E6F /* Main.storyboard */; };
 		55B9EA071F70D99100160E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B9EA061F70D99100160E6F /* Assets.xcassets */; };
 		55B9EA0A1F70D99100160E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B9EA081F70D99100160E6F /* LaunchScreen.storyboard */; };
+		55C6095F1F70E18200AEA6B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C6095E1F70E18200AEA6B7 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552388D21F70E1B700FC11A0 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		55B9E9FC1F70D99100160E6F /* daily-dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daily-dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B9E9FF1F70D99100160E6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55B9EA011F70D99100160E6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,7 @@
 		55B9EA061F70D99100160E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55B9EA091F70D99100160E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55B9EA0B1F70D99100160E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C6095E1F70E18200AEA6B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C6095F1F70E18200AEA6B7 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				55B9E9FE1F70D99100160E6F /* daily-dose */,
 				55B9E9FD1F70D99100160E6F /* Products */,
+				55C6095D1F70E18200AEA6B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +67,15 @@
 				55B9EA0B1F70D99100160E6F /* Info.plist */,
 			);
 			path = "daily-dose";
+			sourceTree = "<group>";
+		};
+		55C6095D1F70E18200AEA6B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				552388D21F70E1B700FC11A0 /* GoogleMobileAds.framework */,
+				55C6095E1F70E18200AEA6B7 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
