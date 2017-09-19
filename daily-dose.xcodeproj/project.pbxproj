@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		552388D31F70ECD400FC11A0 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552388D21F70E1B700FC11A0 /* GoogleMobileAds.framework */; };
+		552388D71F70ED9C00FC11A0 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552388D61F70ED9C00FC11A0 /* PurchaseManager.swift */; };
 		55B9EA001F70D99100160E6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E9FF1F70D99100160E6F /* AppDelegate.swift */; };
-		55B9EA021F70D99100160E6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9EA011F70D99100160E6F /* ViewController.swift */; };
+		55B9EA021F70D99100160E6F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9EA011F70D99100160E6F /* HomeVC.swift */; };
 		55B9EA051F70D99100160E6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B9EA031F70D99100160E6F /* Main.storyboard */; };
 		55B9EA071F70D99100160E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B9EA061F70D99100160E6F /* Assets.xcassets */; };
 		55B9EA0A1F70D99100160E6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B9EA081F70D99100160E6F /* LaunchScreen.storyboard */; };
@@ -18,9 +19,10 @@
 
 /* Begin PBXFileReference section */
 		552388D21F70E1B700FC11A0 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		552388D61F70ED9C00FC11A0 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		55B9E9FC1F70D99100160E6F /* daily-dose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "daily-dose.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B9E9FF1F70D99100160E6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55B9EA011F70D99100160E6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55B9EA011F70D99100160E6F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		55B9EA041F70D99100160E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55B9EA061F70D99100160E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55B9EA091F70D99100160E6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552388D41F70ED5C00FC11A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55B9EA011F70D99100160E6F /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		552388D51F70ED8200FC11A0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				552388D61F70ED9C00FC11A0 /* PurchaseManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		55B9E9F31F70D99100160E6F = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +79,9 @@
 		55B9E9FE1F70D99100160E6F /* daily-dose */ = {
 			isa = PBXGroup;
 			children = (
+				552388D51F70ED8200FC11A0 /* Services */,
+				552388D41F70ED5C00FC11A0 /* Controller */,
 				55B9E9FF1F70D99100160E6F /* AppDelegate.swift */,
-				55B9EA011F70D99100160E6F /* ViewController.swift */,
 				55B9EA031F70D99100160E6F /* Main.storyboard */,
 				55B9EA061F70D99100160E6F /* Assets.xcassets */,
 				55B9EA081F70D99100160E6F /* LaunchScreen.storyboard */,
@@ -152,7 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B9EA021F70D99100160E6F /* ViewController.swift in Sources */,
+				55B9EA021F70D99100160E6F /* HomeVC.swift in Sources */,
+				552388D71F70ED9C00FC11A0 /* PurchaseManager.swift in Sources */,
 				55B9EA001F70D99100160E6F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
