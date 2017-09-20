@@ -15,18 +15,7 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) {
-            removeAdsBtn.removeFromSuperview()
-            bannerView.removeFromSuperview()
-        } else {
-            bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-            bannerView.rootViewController = self
-            bannerView.load(GADRequest())
-            
-        }
-        
-        
+        setupAds()
     }
     
     @IBAction func removeAdsPressed(_ sender: Any) {
@@ -41,8 +30,23 @@ class HomeVC: UIViewController {
         }
     }
     
+    func setupAds() {
+        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) {
+            removeAdsBtn.removeFromSuperview()
+            bannerView.removeFromSuperview()
+        } else {
+            bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
+        }
+    }
+    
     @IBAction func restoreBtnPressed(_ sender: Any) {
-        
+        PurchaseManager.instance.restorePurchases { success in
+            if success {
+                self.setupAds()
+            }
+        }
     }
 }
 
